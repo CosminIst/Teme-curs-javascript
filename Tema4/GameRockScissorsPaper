@@ -1,0 +1,76 @@
+var computerChoiceString = "";
+var userChoiceString = "";
+
+var computerChoiceNumber = Math.floor(Math.random() * 3 + 1);
+var userChoiceNumber = Math.floor(Math.random() * 3 + 1);
+
+console.log(computerChoiceNumber);
+console.log(userChoiceNumber);
+
+var a = computerChoiceNumber;
+var b = userChoiceNumber;
+
+function play (computerChoiceNumber, userChoiceNumber) {
+ 
+  switch (computerChoiceNumber) {
+    case 1:
+      computerChoiceString = "ROCK";
+      break;
+
+    case 2:
+      computerChoiceString = "PAPER";
+      break;
+
+    case 3:
+      computerChoiceString = "SCISSORS";
+      break;
+
+    default:
+      console.log("Invalid input");
+  }
+
+  switch (userChoiceNumber) {
+    case 1:
+      userChoiceString = "ROCK";
+      break;
+
+    case 2:
+      userChoiceString = "PAPER";
+      break;
+
+    case 3:
+      userChoiceString = "SCISSORS";
+      break;
+
+    default:
+      console.log("Invalid input");
+  }
+
+  console.log("Computer choice: " + "  " + computerChoiceString);
+  console.log("User choice: " + "  " + userChoiceString);
+
+  if (computerChoiceString === userChoiceString) {
+    console.log("It's a draw !");
+  }
+  if (computerChoiceString === "ROCK" && userChoiceString === "PAPER") {
+    console.log("User wins !");
+  }
+  if (computerChoiceString === "ROCK" && userChoiceString === "SCISSORS") {
+    console.log("Computer wins !");
+  }
+  if (computerChoiceString === "PAPER" && userChoiceString === "ROCK") {
+    console.log("Computer wins !");
+  }
+  if (computerChoiceString === "PAPER" && userChoiceString === "SCISSORS") {
+    console.log("User wins !");
+  }
+  if (computerChoiceString === "SCISSORS" && userChoiceString === "ROCK") {
+    console.log("User wins !");
+  }
+  if (computerChoiceString === "SCISSORS" && userChoiceString === "PAPER") {
+    console.log("Computer wins !");
+  }
+
+}
+
+play (a,b);
