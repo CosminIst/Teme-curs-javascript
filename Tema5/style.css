@@ -16,7 +16,11 @@ label {
   margin-left: -130px;
 }
 
+#male {
+  margin-left: -70px;
+}
 #female {
+  margin-left: -70px;
   margin-bottom: 50px;
 }
 
@@ -36,4 +40,16 @@ button {
   border-radius: 5px;
   border: 2px;
   margin-top: 20px;
+  float:right;
+}
+
+img {
+  height: 600px;
+  width: 500px;
+}
+
+.bigOne {
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
