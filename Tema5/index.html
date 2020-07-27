@@ -7,34 +7,35 @@
   </head>
 
   <body>
-		<div class = "bigOne">
-			<section>
-					<div id="app"></div>
-					
-					<form>
-						<input type="text" id="fname" value="First Name" /><br />
-						<br />
-						<input type="text" id="lname" value="Last Name" /><br />
-						<br />
-					</form>
+    <div class="bigOne">
+      <section>
+        <div id="app"></div>
 
-					<p>Gender:</p>
-					<input type="radio" id="male" name="gender" value="male" />
-					<label>M</label><br />
-					<input type="radio" id="female" name="gender" value="female" />
-					<label>F</label><br />
+        <form id="form">
+          <input type="text" id="fname" placeholder="First name" /><br />
+          <br />
+          <input type="text" id="lname" placeholder="Last name" /><br />
+          <br />
+        </form>
 
-					<textarea id="comment" name="comment">
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label>M</label><br />
+        <input type="radio" id="female" name="gender" value="female" />
+        <label>F</label><br />
+
+        <textarea id="comment" name="comment">
 Your message here ...
-					</textarea>
-					<br>
+					</textarea
+        >
+        <br />
 
-					<button>Submit</button>
-			</section>
-			<aside>
-				<img src = "poza.jpg">
-			</aside>
-				<script src="src/index.js"></script>
-	</div>
+        <button id="submitButton">Submit</button>
+      </section>
+      <aside>
+        <img src="src/poza.jpg" />
+      </aside>
+      <script src="src/index.js"></script>
+    </div>
   </body>
 </html>
