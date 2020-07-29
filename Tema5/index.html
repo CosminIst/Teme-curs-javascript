@@ -4,38 +4,45 @@
     <title>Parcel Sandbox</title>
     <link rel="stylesheet" href="src/styles.css" />
     <meta charset="UTF-8" />
+    <script src="src/index.js"></script>
   </head>
 
   <body>
     <div class="bigOne">
       <section>
-        <div id="app"></div>
-
-        <form id="form">
-          <input type="text" id="fname" placeholder="First name" /><br />
+        <form name="form" onsubmit="return validate(event)">
+          <input
+            type="text"
+            id="fname"
+            placeholder="First name"
+            value=""
+          /><br />
           <br />
-          <input type="text" id="lname" placeholder="Last name" /><br />
+          <input
+            type="text"
+            id="lname"
+            placeholder="Last name"
+            value=""
+          /><br />
           <br />
-        </form>
 
-        <p>Gender:</p>
-        <input type="radio" id="male" name="gender" value="male" />
-        <label>M</label><br />
-        <input type="radio" id="female" name="gender" value="female" />
-        <label>F</label><br />
+          <p>Gender:</p>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label>M</label><br />
+          <input type="radio" id="female" name="gender" value="female" />
+          <label>F</label><br />
 
-        <textarea id="comment" name="comment">
+          <textarea id="comment" name="comment">
 Your message here ...
 					</textarea
-        >
-        <br />
-
-        <button id="submitButton">Submit</button>
+          >
+          <br />
+          <button type="submit">Submit</button>
+        </form>
       </section>
       <aside>
         <img src="src/poza.jpg" />
       </aside>
-      <script src="src/index.js"></script>
     </div>
   </body>
 </html>
