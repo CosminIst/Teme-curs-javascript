@@ -44,8 +44,9 @@ button {
 }
 
 img {
-  height: 600px;
-  width: 500px;
+  height: 400px;
+  width: 300px;
+  margin-left: 100px;
 }
 
 .bigOne {
@@ -58,3 +59,26 @@ img {
   border: 1px solid red;
   
 }
+
+.warningParagraph {
+  visibility:hidden;
+  position:relative;
+  background:hsl(0, 100%, 91%) ;
+  border-radius: 5px;
+  max-width:350px;
+  margin-top: 10px;
+  margin-bottom:10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family:'Dancing Script', cursive; ;
+}
+
+.warningParagraph::before {
+  content:"";
+  position:absolute;
+  top:-20px;
+  left:10%;
+  border: 10px solid transparent;
+  border-bottom:10px solid hsl(0, 100%, 91%) ;
+}
+
